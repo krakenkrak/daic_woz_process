@@ -26,4 +26,3 @@ words_to_remove = {0: 'xxx', 1: 'xxxx', 2: ' ', 3: '  ', 4: '   ', 5: '    ',
 symbols_to_remove = ['<', '>', '[', ']']
 
 excluded_sessions = [342, 394, 398, 460]
-

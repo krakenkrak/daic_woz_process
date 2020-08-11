@@ -83,20 +83,20 @@ else:
 EXP_NAME = f"{extension}{data_eq}{bkgnd}"
 
 if sys.platform == 'win32':
-    DATASET = os.path.join('C:', '\\Users', 'Andrew', 'OneDrive', 'DAIC-WOZ')
-    WORKSPACE = os.path.join('C:', '\\Users', 'Andrew', 'OneDrive', 'Coding', 'PycharmProjects', 'daic_woz_2')
+    DATASET = os.path.join('C:', '\\Users', 'Kacper', 'Desktop', 'Praca_mgr', 'baza_danych') # here is database folder with all zip files
+    WORKSPACE = os.path.join('C:', '\\Users', 'Kacper', 'Desktop', 'Praca_mgr', 'Python', 'daic_woz_2') # here is folder to store output of this program
     TRAIN_SPLIT_PATH = os.path.join(DATASET, 'train_split_Depression_AVEC2017.csv')
     DEV_SPLIT_PATH = os.path.join(DATASET, 'dev_split_Depression_AVEC2017.csv')
     TEST_SPLIT_PATH = os.path.join(DATASET, 'test_split_Depression_AVEC2017.csv')
     FULL_TRAIN_SPLIT_PATH = os.path.join(DATASET, 'full_train_split_Depression_AVEC2017.csv')
     COMP_DATASET_PATH = os.path.join(DATASET, 'complete_Depression_AVEC2017.csv')
 elif sys.platform == 'linux' and not os.uname()[1] == 'andrew-ubuntu':
-    DATASET = os.path.join('/vol/vssp/datasets/singlevideo01/DAIC-WOZ')
+    DATASET = os.path.join('/mnt/c/Users/Kacper/Desktop/Praca_mgr/baza_danych') # here is database folder with all zip files in Ubuntu transcription
     # set the path of the workspace (where the code is)
     WORKSPACE_FILES_DIR = \
-        '/user/HS227/ab01814/pycharm_projects/daic_woz_process'
+        '/mnt/c/Users/Kacper/Desktop/Praca_mgr/Python/daic_woz_process' # here is folder with pycharm project in Ubuntu transcription
     # set the path of the workspace (where the models/output will be stored)
-    WORKSPACE_MAIN_DIR = '/vol/research/ab01814_res/daic_woz_2'
+    WORKSPACE_MAIN_DIR = '/mnt/c/Users/Kacper/Desktop/Praca_mgr/Python/daic_woz_2' # here is folder to store output of this program in Ubuntu transcription
     TRAIN_SPLIT_PATH = os.path.join(DATASET, 'train_split_Depression_AVEC2017.csv')
     DEV_SPLIT_PATH = os.path.join(DATASET, 'dev_split_Depression_AVEC2017.csv')
     TEST_SPLIT_PATH = os.path.join(DATASET, 'test_split_Depression_AVEC2017.csv')
